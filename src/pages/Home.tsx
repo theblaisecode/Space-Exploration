@@ -1,6 +1,8 @@
+import HomeWrapper from "../styles/HomeWrapper"
+
 function Home() {
   return (
-    <div>Home</div>
+    <HomeWrapper>Home</HomeWrapper>
   )
 }
 export default Home

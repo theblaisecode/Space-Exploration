@@ -1,6 +1,6 @@
+import DestinationWrapper from "../styles/DestinationWrapper";
+
 function Destination() {
-  return (
-    <div>Destination</div>
-  )
+  return <DestinationWrapper>Destination</DestinationWrapper>;
 }
-export default Destination
+export default Destination;

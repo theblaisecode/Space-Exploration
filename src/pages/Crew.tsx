@@ -1,6 +1,8 @@
+import CrewWrapper from "../styles/CrewWrapper"
+
 function Crew() {
   return (
-    <div>Crew</div>
+    <CrewWrapper>Crew</CrewWrapper>
   )
 }
 export default Crew

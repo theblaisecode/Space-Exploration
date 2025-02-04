@@ -3,6 +3,7 @@ import { webNav } from "../data";
 
 type navInfo = {
   id: number;
+  number: string;
   info: string;
   url: string;
   ariaLabel: string;
@@ -10,15 +11,16 @@ type navInfo = {
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="nav">
       {webNav.map((navItem: navInfo) => {
-        const { id, info, url, ariaLabel } = navItem;
+        const { id, number, info, url, ariaLabel } = navItem;
         return (
           <NavLink
             key={id}
             to={url}
             aria-label={ariaLabel}
             className={({ isActive }) => (isActive ? "activeNav" : "")}>
+            <span>{number}</span>
             {info}
           </NavLink>
         );

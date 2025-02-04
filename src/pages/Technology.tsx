@@ -1,6 +1,6 @@
+import TechnologyWrapper from "../styles/TechnoogyWrpper";
+
 function Technology() {
-  return (
-    <div>Technology</div>
-  )
+  return <TechnologyWrapper>Technology</TechnologyWrapper>;
 }
-export default Technology
+export default Technology;

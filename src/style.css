@@ -1,5 +1,62 @@
+/* 
+  font-family: "Bellefair", serif;
+  font-family: "Barlow", serif;
+  font-family: "Barlow Condensed", serif;
+ */
+
+:root {
+  --bg: #111320;
+  --textLight: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% /* 1rem = 10px*/;
+}
+
+body {
+  background: var(--bg);
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  width: 48%;
+  display: flex;
+  gap: 4.8rem;
+  justify-content: flex-end;
+  padding-right: 15rem;
+}
+
+nav a {
+  font-family: "Barlow Condensed", serif;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 3.85rem 0;
+  text-transform: uppercase;
+  color: var(--textLight);
+  text-decoration: none;
+  border-bottom: 0.3rem solid transparent;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+nav a:hover,
+.activeNav {
+  border-bottom: 0.3rem solid var(--textLight);
+  transition: all 0.6s;
+}
+
+nav a span {
+  font-weight: 600;
+  padding-right: 1rem;
 }
