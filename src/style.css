@@ -7,6 +7,8 @@
 :root {
   --bg: #111320;
   --textLight: #fff;
+  --textDark: #0b0d17;
+  --textPrimary: #d0d6f9;
 }
 
 * {
@@ -23,6 +25,11 @@ body {
   background: var(--bg);
   height: 100vh;
   font-size: 1.6rem;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
 }
 
 nav {
@@ -44,10 +51,9 @@ nav a {
   padding: 3.85rem 0;
   text-transform: uppercase;
   color: var(--textLight);
-  text-decoration: none;
   border-bottom: 0.3rem solid transparent;
-  cursor: pointer;
   transition: 0.6s;
+  letter-spacing: 0.2rem;
 }
 
 nav a:hover,
@@ -59,4 +65,11 @@ nav a:hover,
 nav a span {
   font-weight: 600;
   padding-right: 1rem;
+  letter-spacing: 0.27rem;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
