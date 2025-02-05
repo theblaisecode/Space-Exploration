@@ -84,6 +84,45 @@ const HomeWrapper = styled.section`
     padding: 11.75rem 6.8rem;
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    .homeContent {
+      flex-direction: column;
+      margin-top: 12rem;
+      gap: 3rem;
+    }
+
+    .contentTop {
+      text-align: center;
+    }
+
+    .contentTop h1 {
+      font-size: 8rem;
+    }
+
+    .contentTop span {
+      font-size: 2rem;
+    }
+
+    .contentTop p {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+
+    .contentBottom {
+      margin-top: 3rem;
+      justify-content: center;
+    }
+
+    .btnBg {
+      padding: 5rem;
+    }
+
+    .contentBottom .homeBtn {
+      font-size: 1.8rem;
+      padding: 7rem 4rem;
+    }
+  }
 `;
 
 export default HomeWrapper;
