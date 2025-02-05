@@ -8,18 +8,36 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 0rem 1.6rem 6rem;
+  padding: 1.6rem 0rem 1.6rem 9rem;
   z-index: 10; /* ✅ Ensures it stays above content */
 
-  .navigation{
+  .navLine {
+    position: absolute;
+    top: 6.5rem;
+    left: 22%;
+    width: 70rem;
+    height: 0.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 20;
+  }
+
+  .navigation {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     width: 45%;
+  }
+
+  .allLinks {
+    /* width: 100%; */
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
     align-items: flex-start;
     padding: 1rem 0 0 6rem;
+
+    .navLine {
+      display: none;
+    }
 
     .navigation {
       position: relative;
@@ -28,6 +46,8 @@ const HeaderWrapper = styled.header`
   }
 
   @media screen and (max-width: 550px), screen and (max-height: 550px) {
+    padding: 1rem 0 0 2rem;
+
     .navigation {
       position: relative;
       width: 50%;

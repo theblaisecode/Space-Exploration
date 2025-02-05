@@ -22,13 +22,21 @@ function Header() {
       <div className="navLine"></div>
 
       <div className="navigation">
-        <Navbar />
-
-        {/* Mobile Nav */}
-        <button className="btn mobileNav" onClick={toggleMobileMenu}>
-          {isMobile ? <FaXmark /> : <FaBarsStaggered />}
-        </button>
+        <div className={isMobile ? "allLink active" : "allLink"}>
+          <Navbar />
+        </div>
       </div>
+
+      {/* Mobile Nav */}
+      <button className="btn mobileNav" onClick={toggleMobileMenu}>
+        {isMobile ? (
+          <FaXmark
+            className={isMobile ? "mobileActive active" : "mobileActive"}
+          />
+        ) : (
+          <FaBarsStaggered />
+        )}
+      </button>
     </HeaderWrapper>
   );
 }

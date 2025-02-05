@@ -41,7 +41,7 @@ nav {
   display: flex;
   gap: 4.8rem;
   justify-content: flex-end;
-  padding-right: 15rem;
+  padding: 0 15rem 0 13rem;
 }
 
 nav a {
@@ -90,10 +90,22 @@ a {
   .mobileNav {
     display: block;
     position: absolute;
-    top: 0;
-    right: 10%;
+    top: 2rem;
+    right: 5%;
     font-size: 2rem;
     color: var(--textPrimary);
+  }
+
+  .allLink {
+    position: fixed;
+    right: -100%;
+    top: 3rem;
+    transition: 0.4s;
+  }
+
+  .allLink.active {
+    right: 0;
+    transition: all 0.4s;
   }
 
   nav {
@@ -102,8 +114,7 @@ a {
     flex-direction: column;
     gap: 3.5rem;
     justify-content: flex-start;
-    padding-right: 0;
-    padding-top: 13.3rem;
+    padding: 13.3rem 0 0 0;
     margin-top: -3rem;
   }
 

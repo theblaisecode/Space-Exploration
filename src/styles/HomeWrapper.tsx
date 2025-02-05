@@ -93,6 +93,8 @@ const HomeWrapper = styled.section`
     }
 
     .contentTop {
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
@@ -121,6 +123,39 @@ const HomeWrapper = styled.section`
     .contentBottom .homeBtn {
       font-size: 1.8rem;
       padding: 7rem 4rem;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+    .homeContent {
+      flex-direction: column;
+      margin-top: 12rem;
+      gap: 2rem;
+    }
+
+    .contentTop h1 {
+      font-size: 12.4rem;
+    }
+
+    .contentTop span {
+      font-size: 2.3rem;
+      letter-spacing: 0.4rem;
+    }
+
+    .contentTop p {
+      font-size: 1.6rem;
+      width: 90%;
+      text-align: center;
+    }
+
+    .btnBg {
+      padding: 5rem;
+      margin-bottom:3rem;
+    }
+
+    .contentBottom .homeBtn {
+      font-size: 3rem;
+      padding: 7.5rem 3rem;
     }
   }
 `;
