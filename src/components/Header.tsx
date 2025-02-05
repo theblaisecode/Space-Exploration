@@ -23,7 +23,7 @@ function Header() {
 
       <div className="navigation">
         <div className={isMobile ? "allLink active" : "allLink"}>
-          <Navbar />
+          <Navbar  />
         </div>
       </div>
 
