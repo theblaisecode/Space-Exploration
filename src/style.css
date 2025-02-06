@@ -74,14 +74,26 @@ a {
   text-decoration: none;
 }
 
-.fadeInUp {
-  animation: fadeInUp 9s ease backwards;
+.fadeIn {
+  animation: fadeIn 1s ease backwards;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
   0% {
     transform: translate(0px, 0px);
     opacity: 0;
+  }
+  25% {
+    transform: translate(0px, 0px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translate(0px, 0px);
+    opacity: 0.75;
   }
   100% {
     transform: translate(0px, 0);
