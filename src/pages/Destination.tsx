@@ -4,9 +4,9 @@ import DestinationWrapper from "../styles/DestinationWrapper";
 function Destination() {
   return (
     <DestinationWrapper>
-      <div className="container">
+      <div className="container2">
         <div className="destinationContent">
-          <h3 className="paagTitle">
+          <h3 className="pageTitle">
             <span>01</span> pick your destination
           </h3>
 

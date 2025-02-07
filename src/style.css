@@ -28,8 +28,13 @@ body {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   width: 70%;
+}
+
+.container2 {
+  margin: 0 auto;
+  width: 55%;
 }
 
 nav {

@@ -17,6 +17,25 @@ const DestinationWrapper = styled.section`
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  .pageTitle {
+    margin-top: 16rem;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    color: var(--textPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.8rem;
+    line-height: 0.4rem;
+    font-weight: 200;
+  }
+
+  .pageTitle span {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.3);
+  }
 `;
 
 export default DestinationWrapper;
