@@ -1,4 +1,4 @@
-import { destination } from "../data";
+import DestinaContent from "../components/DestinaContent";
 import DestinationWrapper from "../styles/DestinationWrapper";
 
 function Destination() {
@@ -6,38 +6,11 @@ function Destination() {
     <DestinationWrapper>
       <div className="container">
         <div className="destinationContent">
-          {destination.map((item) => {
-            const {
-              id,
-              tabName,
-              img,
-              imgAlt,
-              heading,
-              tabContent,
-              distance,
-              travelTime,
-            } = item;
+          <h3 className="paagTitle">
+            <span>01</span> pick your destination
+          </h3>
 
-            return (
-              <>
-                <div key={id} className="contentTop">
-                  <img src={img} alt={imgAlt} />
-                </div>
-
-                <div className="contentBottom">
-                  <div className="destinationTab">
-                    {destination.map((tabNames, index) => {
-                      return (
-                        <span key={index} className="tabs activetab">
-                          {tabNames.tabName}
-                        </span>
-                      );
-                    })}
-                  </div>
-                </div>
-              </>
-            );
-          })}
+          <DestinaContent />
         </div>
       </div>
     </DestinationWrapper>

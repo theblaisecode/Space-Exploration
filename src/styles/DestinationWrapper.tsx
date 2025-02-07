@@ -10,6 +10,13 @@ const DestinationWrapper = styled.section`
   justify-content: center;
   color: var(--textLight);
   position: relative;
+
+  .destinationContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 `;
 
 export default DestinationWrapper;
