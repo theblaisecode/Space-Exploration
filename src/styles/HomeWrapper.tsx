@@ -150,12 +150,22 @@ const HomeWrapper = styled.section`
 
     .btnBg {
       padding: 5rem;
-      margin-bottom:3rem;
+      margin-bottom: 3rem;
     }
 
     .contentBottom .homeBtn {
       font-size: 3rem;
       padding: 7.5rem 3rem;
+    }
+  }
+
+  @media (min-width: 951px) and (max-width: 1200px) {
+    .contentTop p {
+      width: 100%;
+    }
+
+    .btnBg {
+      padding: 0;
     }
   }
 `;

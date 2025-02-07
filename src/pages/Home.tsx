@@ -4,7 +4,7 @@ import HomeWrapper from "../styles/HomeWrapper";
 function Home() {
   return (
     <HomeWrapper>
-      <div className="container">
+      <div className="container2">
         <div className="homeContent">
           <div className="contentTop">
             <span>so, you want to travel to</span>

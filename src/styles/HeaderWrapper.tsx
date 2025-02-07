@@ -35,6 +35,10 @@ const HeaderWrapper = styled.header`
     align-items: flex-start;
     padding: 1rem 0 0 6rem;
 
+    .logo img {
+      width: 80%;
+    }
+
     .navLine {
       display: none;
     }
@@ -51,6 +55,12 @@ const HeaderWrapper = styled.header`
     .navigation {
       position: relative;
       width: 50%;
+    }
+  }
+
+  @media (min-width: 951px) and (max-width: 1200px) {
+    .navLine {
+      display: none;
     }
   }
 `;
