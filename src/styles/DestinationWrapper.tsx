@@ -17,6 +17,12 @@ const DestinationWrapper = styled.section`
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  @media screen and (max-width: 550px), screen and (max-height: 550px) {
+    .destinationContent {
+      align-items: center;
+    }
+  }
 `;
 
 export default DestinationWrapper;

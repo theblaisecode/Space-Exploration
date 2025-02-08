@@ -15,7 +15,7 @@ const HeaderWrapper = styled.header`
     position: absolute;
     top: 6.5rem;
     left: 22%;
-    width: 70rem;
+    width: 60rem;
     height: 0.2rem;
     background: rgba(255, 255, 255, 0.2);
     z-index: 20;
@@ -59,6 +59,12 @@ const HeaderWrapper = styled.header`
   }
 
   @media (min-width: 951px) and (max-width: 1200px) {
+    .navLine {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1441px) and (max-width: 1628px) {
     .navLine {
       display: none;
     }
