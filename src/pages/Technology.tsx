@@ -1,6 +1,21 @@
-import TechnologyWrapper from "../styles/TechnoogyWrpper";
+import PageTitle from "../components/PageTitle";
+import TechnologyWrapper from "../styles/TechnologyWrapper";
 
 function Technology() {
-  return <TechnologyWrapper>Technology</TechnologyWrapper>;
+  const highlight = "03";
+  const text = "space launch 101";
+
+  return (
+    <TechnologyWrapper>
+      <div className="container2">
+        <div className="technologyContent">
+          <PageTitle highlight={highlight} text={text} />
+
+          <></>
+        </div>
+      </div>
+    </TechnologyWrapper>
+  );
 }
+
 export default Technology;

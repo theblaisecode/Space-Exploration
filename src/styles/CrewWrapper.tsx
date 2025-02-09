@@ -10,6 +10,19 @@ const CrewWrapper = styled.section`
   justify-content: center;
   color: var(--textLight);
   position: relative;
+
+  .crewContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 550px), screen and (max-height: 550px) {
+    .crewContent {
+      align-items: center;
+    }
+  }
 `;
 
 export default CrewWrapper;

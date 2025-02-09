@@ -11,4 +11,5 @@ function PageTitle(props: PageHeading) {
     </h3>
   );
 }
+
 export default PageTitle;
