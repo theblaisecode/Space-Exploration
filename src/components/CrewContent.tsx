@@ -12,7 +12,7 @@ import CrewContentWrapper from "../styles/CrewContentWrapper";
 function CrewContent() {
   const [crewData, setCrewData] = useState<number>(1);
 
-  const toggleCrew = (index:number) => {
+  const toggleCrew = (index: number) => {
     setCrewData(index);
   };
 
@@ -24,7 +24,7 @@ function CrewContent() {
             const { id, jobTitle, crewName, crewInfo } = crewDetails;
 
             return (
-              <div key={id}>
+              <div key={id} className="crewDeets">
                 <span>{jobTitle} </span>
                 <h2>{crewName}</h2>
                 <p>{crewInfo}</p>
@@ -36,18 +36,7 @@ function CrewContent() {
             <div className="allCrewNav">
               {crew.map((crewNav) => {
                 const { id } = crewNav;
-                return (
-                  <span
-                    key={id}
-                    className="cccccc"
-                    style={{
-                      width: "30px",
-                      height: "30px",
-                      background: "red",
-                      display: "block",
-                      marginBottom: ".3rem",
-                    }}></span>
-                );
+                return <span key={id}></span>;
               })}
             </div>
           </div>
