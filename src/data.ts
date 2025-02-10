@@ -75,7 +75,7 @@ export const destination: {
     imgAlt: "mars",
     heading: "mars",
     tabContent:
-      "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest! Let's go!",
+      "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest! Let's go explore Mars!",
     distance: "225 MIL. km",
     travelTime: "9 months",
   },
