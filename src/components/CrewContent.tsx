@@ -24,7 +24,13 @@ function CrewContent() {
             const { id, jobTitle, crewName, crewInfo } = crewDetails;
 
             return (
-              <div key={id} className="crewDeets">
+              <div
+                key={id}
+                className={
+                  crewData === id
+                    ? "fadeIn crewDeets active"
+                    : "fadeIn crewDeets"
+                }>
                 <span>{jobTitle} </span>
                 <h2>{crewName}</h2>
                 <p>{crewInfo}</p>
@@ -36,7 +42,12 @@ function CrewContent() {
             <div className="allCrewNav">
               {crew.map((crewNav) => {
                 const { id } = crewNav;
-                return <span key={id}></span>;
+                return (
+                  <span
+                    key={id}
+                    className={crewData === id ? "active" : ""}
+                    onClick={() => toggleCrew(id)}></span>
+                );
               })}
             </div>
           </div>
@@ -46,7 +57,14 @@ function CrewContent() {
           {crew.map((crewImage) => {
             const { id, crewImg, crewImgAlt } = crewImage;
 
-            return <img key={id} src={crewImg} alt={crewImgAlt} />;
+            return (
+              <img
+                key={id}
+                src={crewImg}
+                alt={crewImgAlt}
+                className={crewData === id ? "fadeIn active" : "fadeIn"}
+              />
+            );
           })}
         </div>
       </div>

@@ -120,33 +120,33 @@ export const crew: {
     crewImg: crewImg1,
     crewImgAlt: "image of Douglas Hurley",
   },
-  // {
-  //   id: 2,
-  //   jobTitle: "mission specialist",
-  //   crewName: "Mark Shuttleworth",
-  //   crewInfo:
-  //     "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
-  //   crewImg: crewImg2,
-  //   crewImgAlt: "image of Mark Shuttleworth",
-  // },
-  // {
-  //   id: 3,
-  //   jobTitle: "pilot",
-  //   crewName: "Victor Glover",
-  //   crewInfo:
-  //     "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ",
-  //   crewImg: crewImg3,
-  //   crewImgAlt: "image of Victor Glover",
-  // },
-  // {
-  //   id: 4,
-  //   jobTitle: "flight engineer",
-  //   crewName: "Anousheh Ansari",
-  //   crewInfo:
-  //     "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
-  //   crewImg: crewImg4,
-  //   crewImgAlt: "image of Anousheh Ansari",
-  // },
+  {
+    id: 2,
+    jobTitle: "mission specialist",
+    crewName: "Mark Shuttleworth",
+    crewInfo:
+      "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. He became the first South African to travel to space as a space tourist.",
+    crewImg: crewImg2,
+    crewImgAlt: "image of Mark Shuttleworth",
+  },
+  {
+    id: 3,
+    jobTitle: "pilot",
+    crewName: "Victor Glover",
+    crewInfo:
+      "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. He  a commander where he pilots an F/A-18. He was a crew member of Expedition 64, and systems flight engineer. ",
+    crewImg: crewImg3,
+    crewImgAlt: "image of Victor Glover",
+  },
+  {
+    id: 4,
+    jobTitle: "flight engineer",
+    crewName: "Anousheh Ansari",
+    crewInfo:
+      "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
+    crewImg: crewImg4,
+    crewImgAlt: "image of Anousheh Ansari",
+  },
 ];
 
 export const technology: {

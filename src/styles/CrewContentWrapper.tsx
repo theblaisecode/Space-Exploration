@@ -5,7 +5,7 @@ const CrewContentWrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    /* gap: 5rem; */
   }
 
   .contentTop {
@@ -19,6 +19,16 @@ const CrewContentWrapper = styled.section`
   }
 
   .crewDeets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    display: none;
+  }
+  
+  .crewDeets.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +46,7 @@ const CrewContentWrapper = styled.section`
 
   .crewDeets h2 {
     font-weight: 100;
-    font-size: 5.6rem;
+    font-size: 5rem;
     color: var(--textLight);
   }
 
@@ -59,6 +69,11 @@ const CrewContentWrapper = styled.section`
     width: 90%;
     padding: 3rem 0;
     margin-left: 5rem;
+    display:none;
+  }
+
+  .contentBottom img.active {
+    display: inline-block;
   }
 
   .allCrewNav {
@@ -66,7 +81,7 @@ const CrewContentWrapper = styled.section`
     bottom: -60%;
     left: 0;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .allCrewNav span {
@@ -75,6 +90,13 @@ const CrewContentWrapper = styled.section`
     border-radius: 50%;
     background: var(--textAccent);
     display: block;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .allCrewNav span.active {
+    background: var(--textLight);
+    transition: all 0.4s;
   }
 `;
 
