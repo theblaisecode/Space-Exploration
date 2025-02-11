@@ -27,7 +27,7 @@ const CrewContentWrapper = styled.section`
     text-transform: uppercase;
     display: none;
   }
-  
+
   .crewDeets.active {
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ const CrewContentWrapper = styled.section`
     width: 90%;
     padding: 3rem 0;
     margin-left: 5rem;
-    display:none;
+    display: none;
   }
 
   .contentBottom img.active {
@@ -89,14 +89,30 @@ const CrewContentWrapper = styled.section`
     height: 1.5rem;
     border-radius: 50%;
     background: var(--textAccent);
-    display: block;
+    /* display: block; */
     transition: 0.4s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textPrimary);
+    padding: 1.5rem;
   }
-
-  .allCrewNav span.active {
+  
+  .allCrewNav span.active,
+  .allCrewNav span:hover {
+    color: var(--textDark);
     background: var(--textLight);
     transition: all 0.4s;
+  }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+  }
+
+  @media (min-width: 951px) and (max-width: 1200px) {
   }
 `;
 

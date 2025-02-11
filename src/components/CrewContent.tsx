@@ -46,7 +46,7 @@ function CrewContent() {
                   <span
                     key={id}
                     className={crewData === id ? "active" : ""}
-                    onClick={() => toggleCrew(id)}></span>
+                    onClick={() => toggleCrew(id)}>{id}</span>
                 );
               })}
             </div>
