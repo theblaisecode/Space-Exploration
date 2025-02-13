@@ -30,12 +30,6 @@ const CrewContentWrapper = styled.section`
 
   .crewDeets.active {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.6rem;
-    font-family: "Bellefair", serif;
-    text-transform: uppercase;
   }
 
   .crewDeets span {
@@ -98,7 +92,7 @@ const CrewContentWrapper = styled.section`
     color: var(--textPrimary);
     padding: 1.5rem;
   }
-  
+
   .allCrewNav span.active,
   .allCrewNav span:hover {
     color: var(--textDark);
@@ -107,6 +101,45 @@ const CrewContentWrapper = styled.section`
   }
 
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    .allCrew {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contentTop {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .crewDeets {
+      align-items: center;
+      gap: 1.6rem;
+      text-align: center;
+    }
+
+    .crewDeets span {
+      font-size: 1.8rem;
+    }
+
+    .crewDeets h2 {
+      font-size: 2.4rem;
+    }
+
+    .crewDeets p {
+      font-size: 1.5rem;
+    }
+
+    .contentBottom {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contentBottom img {
+      width: 70%;
+      margin-left: 0rem;
+      margin-top: 5rem;
+      padding: 0;
+    }
   }
 
   @media (min-width: 550px) and (max-width: 950px) {
