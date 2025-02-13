@@ -107,8 +107,7 @@ const CrewContentWrapper = styled.section`
     }
 
     .contentTop {
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 4rem;
     }
 
     .crewDeets {
@@ -139,6 +138,21 @@ const CrewContentWrapper = styled.section`
       margin-left: 0rem;
       margin-top: 5rem;
       padding: 0;
+    }
+
+    .allCrewNav {
+      position: fixed;
+      bottom: 48%;
+      left: 50%;
+      transform: translateX(-26%);
+      width: 100%;
+      max-width: 120rem;
+      text-align: center;
+    }
+
+    .allCrewNav span {
+      font-size: 1.3rem;
+      gap: 2rem;
     }
   }
 
