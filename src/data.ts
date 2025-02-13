@@ -134,7 +134,7 @@ export const crew: {
     jobTitle: "pilot",
     crewName: "Victor Glover",
     crewInfo:
-      "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. He  a commander where he pilots an F/A-18. He was a crew member of Expedition 64, and systems flight engineer. ",
+      "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. He is a commander where he pilots an F/A-18. He was a crew member of Expedition 64, and systems flight engineer. ",
     crewImg: crewImg3,
     crewImgAlt: "image of Victor Glover",
   },

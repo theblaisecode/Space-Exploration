@@ -72,10 +72,14 @@ const CrewContentWrapper = styled.section`
 
   .allCrewNav {
     position: absolute;
-    bottom: -60%;
-    left: 0;
+    bottom: -40%;
+    left: 0%;
+    /* transform: translateX(8%); */
     display: flex;
     gap: 3rem;
+    width: 100%;
+    max-width: 120rem;
+    text-align: center;
   }
 
   .allCrewNav span {
@@ -134,7 +138,7 @@ const CrewContentWrapper = styled.section`
     }
 
     .contentBottom img {
-      width: 70%;
+      width: 60%;
       margin-left: 0rem;
       margin-top: 5rem;
       padding: 0;
@@ -157,6 +161,25 @@ const CrewContentWrapper = styled.section`
   }
 
   @media (min-width: 550px) and (max-width: 950px) {
+    .contentTop {
+      width: 72%;
+    }
+
+    .crewDeets {
+      padding-bottom: 5rem;
+    }
+
+    .allCrewNav {
+      bottom: 52%;
+      transform: translateX(-14%);
+    }
+
+    .contentBottom img {
+      width: 53%;
+      margin-left: 0rem;
+      margin-top: 0rem;
+      padding: 0;
+    }
   }
 
   @media (min-width: 951px) and (max-width: 1200px) {
