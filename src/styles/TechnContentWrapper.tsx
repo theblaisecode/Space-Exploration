@@ -5,4 +5,3 @@ const TechnContentWrapper = styled.section`
 `
   
 export default TechnContentWrapper
-`
