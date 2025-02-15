@@ -2,13 +2,6 @@ import { useState } from "react";
 import { crew } from "../data";
 import CrewContentWrapper from "../styles/CrewContentWrapper";
 
-/* id: number;
-  jobTitle: string;
-  crewName: string;
-  crewInfo: string;
-  crewImg: string;
-  crewImgAlt: string; */
-
 function CrewContent() {
   const [crewData, setCrewData] = useState<number>(1);
 
@@ -46,7 +39,9 @@ function CrewContent() {
                   <span
                     key={id}
                     className={crewData === id ? "active" : ""}
-                    onClick={() => toggleCrew(id)}>{id}</span>
+                    onClick={() => toggleCrew(id)}>
+                    {id}
+                  </span>
                 );
               })}
             </div>
