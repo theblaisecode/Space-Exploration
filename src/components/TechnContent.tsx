@@ -9,7 +9,7 @@ function TechnContent() {
 
   return (
     <TechnContentWrapper>
-      <div className="allTech"> TechnContent </div>{" "}
+      <div className="allTech"> TechnContent </div>
     </TechnContentWrapper>
   );
 }
