@@ -10,6 +10,19 @@ const TechnologyWrapper = styled.section`
   justify-content: center;
   color: var(--textLight);
   position: relative;
+
+  .technologyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 550px), screen and (max-height: 550px) {
+    .technologyContent {
+      align-items: center;
+    }
+  }
 `;
 
 export default TechnologyWrapper;

@@ -48,7 +48,21 @@ function TechnContent() {
             );
           })}
         </div>
-        <div className="contentBottom"></div>
+
+        <div className="contentBottom">
+          {technology.map((techImage) => {
+            const { id, techImg, techImgAlt } = techImage;
+
+            return (
+              <img
+                key={id}
+                src={techImg}
+                alt={techImgAlt}
+                className={techData === id ? "fadeIn active" : "fadeIn"}
+              />
+            );
+          })}
+        </div>
       </div>
     </TechnContentWrapper>
   );

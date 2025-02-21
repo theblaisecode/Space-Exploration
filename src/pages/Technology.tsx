@@ -1,4 +1,5 @@
 import PageTitle from "../components/PageTitle";
+import TechnContent from "../components/TechnContent.tsx";
 import TechnologyWrapper from "../styles/TechnologyWrapper";
 
 function Technology() {
@@ -11,7 +12,7 @@ function Technology() {
         <div className="technologyContent">
           <PageTitle highlight={highlight} text={text} />
 
-          <></>
+          <TechnContent/>
         </div>
       </div>
     </TechnologyWrapper>
