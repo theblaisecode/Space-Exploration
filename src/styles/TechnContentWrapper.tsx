@@ -95,6 +95,68 @@ const TechnContentWrapper = styled.section`
   .contentBottom img.active {
     display: inline-block;
   }
+
+  @media screen and (max-width: 950px), screen and (max-height: 550px) {
+    .allTech {
+      flex-direction: column-reverse;
+    }
+
+    .allTech .contentTop {
+      flex-direction: column;
+      padding: 0 4rem;
+    }
+
+    .allTechNav {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .allTechNav span {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+
+    .techDeets {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.3rem;
+    }
+
+    .techDeets span {
+      font-size: 1.8rem;
+    }
+
+    .techDeets h2 {
+      font-size: 3.5rem;
+    }
+
+    .techDeets p {
+      font-size: 1.5rem;
+    }
+
+    .contentBottom {
+      width: 100vw;
+      height: 65vw;
+      justify-content: center;
+    }
+
+    .contentBottom img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 950px) {
+  }
+
+  @media (min-width: 951px) and (max-width: 1200px) {
+  }
 `;
 
 export default TechnContentWrapper;
