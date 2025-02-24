@@ -139,20 +139,30 @@ const TechnContentWrapper = styled.section`
 
     .contentBottom {
       width: 100vw;
-      height: 65vw;
+      height: 30vh;
       justify-content: center;
+      overflow: hidden;
     }
 
     .contentBottom img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: none;
       margin-right: 0;
     }
   }
 
   @media (min-width: 550px) and (max-width: 950px) {
+    .contentBottom {
+      width: 100%;
+      height: 43vh;
+    }
+
+    .contentBottom img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   @media (min-width: 951px) and (max-width: 1200px) {
