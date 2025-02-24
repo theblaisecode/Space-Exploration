@@ -87,8 +87,8 @@ const TechnContentWrapper = styled.section`
   }
 
   .contentBottom img {
-    width: 120%;
-    margin-right: -77.5%;
+    width: 100%;
+    /* margin-right: -77.5%; */
     display: none;
   }
 
@@ -166,6 +166,43 @@ const TechnContentWrapper = styled.section`
   }
 
   @media (min-width: 951px) and (max-width: 1200px) {
+    .allTech {
+      gap: 3rem;
+    }
+    .allTech .contentTop {
+      /* flex-direction: column; */
+      /* padding: 0 4rem; */
+      gap: 2rem;
+    }
+
+    .allTechNav {
+      /* flex-direction: row; */
+      gap: 3rem;
+    }
+
+    .allTechNav span {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+
+    .techDeets span {
+      font-size: 2rem;
+    }
+
+    .techDeets h2 {
+      font-size: 4rem;
+    }
+
+    .techDeets p {
+      font-size: 1.5rem;
+    }
+
+    .contentBottom img {
+      width: 70%;
+      margin-right: 0;
+    }
   }
 `;
 
