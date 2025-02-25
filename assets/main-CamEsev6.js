@@ -464,8 +464,10 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   }
 
   .contentTop {
-    position: relative;
-    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 9rem 0 1.5rem 0;
+    gap: 10rem;
   }
 
   .contentTop,
@@ -526,14 +528,15 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   }
 
   .allCrewNav {
-    position: absolute;
+    /* position: absolute;
     bottom: -40%;
-    left: 0%;
+    left: 0%; */
     /* transform: translateX(8%); */
     display: flex;
     gap: 3rem;
     width: 100%;
     max-width: 120rem;
+    /* margin-top: 10rem; */
     text-align: center;
   }
 
@@ -566,13 +569,17 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     }
 
     .contentTop {
-      margin-bottom: 4rem;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin: 2rem 0 3rem 0;
     }
 
     .crewDeets {
       align-items: center;
       gap: 1.6rem;
       text-align: center;
+      min-height: 15rem;
     }
 
     .crewDeets span {
@@ -599,16 +606,6 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
       padding: 0;
     }
 
-    .allCrewNav {
-      position: fixed;
-      bottom: 48%;
-      left: 50%;
-      transform: translateX(-26%);
-      width: 100%;
-      max-width: 120rem;
-      text-align: center;
-    }
-
     .allCrewNav span {
       font-size: 1.3rem;
       gap: 2rem;
@@ -618,15 +615,8 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   @media (min-width: 550px) and (max-width: 950px) {
     .contentTop {
       width: 72%;
-    }
-
-    .crewDeets {
-      padding-bottom: 5rem;
-    }
-
-    .allCrewNav {
-      bottom: 52%;
-      transform: translateX(-14%);
+      gap: 4rem;
+      margin-bottom: 5rem;
     }
 
     .contentBottom img {
@@ -639,7 +629,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
 
   @media (min-width: 951px) and (max-width: 1200px) {
   }
-`;function n0(){const[r,l]=z.useState(1),o=s=>{l(s)};return W.jsx(t0,{children:W.jsxs("div",{className:"allCrew",children:[W.jsxs("div",{className:"contentTop",children:[es.map(s=>{const{id:c,jobTitle:d,crewName:p,crewInfo:h}=s;return W.jsxs("div",{className:r===c?"fadeIn crewDeets active":"fadeIn crewDeets",children:[W.jsxs("span",{children:[d," "]}),W.jsx("h2",{children:p}),W.jsx("p",{children:h})]},c)}),W.jsx("div",{className:"crewNav",children:W.jsx("div",{className:"allCrewNav",children:es.map(s=>{const{id:c}=s;return W.jsx("span",{className:r===c?"active":"",onClick:()=>o(c),children:c},c)})})})]}),W.jsx("div",{className:"contentBottom",children:es.map(s=>{const{id:c,crewImg:d,crewImgAlt:p}=s;return W.jsx("img",{src:d,alt:p,className:r===c?"fadeIn active":"fadeIn"},c)})})]})})}const r0="/Space-Exploration/assets/background-crew-desktop-DbFT2PzE.jpg",i0=Ln.section`
+`;function n0(){const[r,l]=z.useState(1),o=s=>{l(s)};return W.jsx(t0,{children:W.jsxs("div",{className:"allCrew",children:[W.jsxs("div",{className:"contentTop",children:[W.jsx("div",{className:"crewDetails",children:es.map(s=>{const{id:c,jobTitle:d,crewName:p,crewInfo:h}=s;return W.jsxs("div",{className:r===c?"fadeIn crewDeets active":"fadeIn crewDeets",children:[W.jsxs("span",{children:[d," "]}),W.jsx("h2",{children:p}),W.jsx("p",{children:h})]},c)})}),W.jsx("div",{className:"crewNav",children:W.jsx("div",{className:"allCrewNav",children:es.map(s=>{const{id:c}=s;return W.jsx("span",{className:r===c?"active":"",onClick:()=>o(c),children:c},c)})})})]}),W.jsx("div",{className:"contentBottom",children:es.map(s=>{const{id:c,crewImg:d,crewImgAlt:p}=s;return W.jsx("img",{src:d,alt:p,className:r===c?"fadeIn active":"fadeIn"},c)})})]})})}const r0="/Space-Exploration/assets/background-crew-desktop-DbFT2PzE.jpg",i0=Ln.section`
   background: url(${r0}) no-repeat bottom center/cover;
   width: 100%;
   height: 100vh;
