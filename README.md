@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Space Exploration
+A dynamic web application designed to provide an immersive experience in space exploration. Built using React Router, TypeScript, and Styled Components, this project offers a seamless and engaging user experience across various devices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Website** - https://theblaisecode.github.io/Space-Exploration/
 
-Currently, two official plugins are available:
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Interactive UI:** A visually engaging interface that enhances the user experience.
+- **Responsive Design:** Fully optimized for various screen sizes, ensuring accessibility on all devices.
+- **React Router Integration:** Enables smooth page transitions and navigation between different space-related sections.
+- **Styled Components:** Modular and elegant styling for a clean and structured user interface.
+- **TypeScript:** Provides type safety and improved maintainability.
 
-## Expanding the ESLint configuration
+<br/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🖼️ Preview
+![Space Exploration](https://github.com/user-attachments/assets/c5889dbd-446f-4393-bc21-8d12ff6f4350)
 
-- Configure the top-level `parserOptions` property like this:
+<br/>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🔧 Tech Stack
+- **React JS:** A powerful library for building interactive and dynamic user interfaces.
+- **React Router:** Enables seamless navigation in a single-page application.
+- **TypeScript:** Enhances development with static type checking and improved code quality.
+- **Styled Components:** Ensures a clean and modular styling approach for better maintainability.
+
+<br/>
+
+## 📚 Documentation
+
+### Installation  
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/theblaisecode/space-exploration.git
+cd space-exploration
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**Running the App**<br/>
+Start the development server:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Build the project for production:
+```bash
+npm run build
+```
+
+<br/>
+
+## 👥 Author
+- GitHub - [@theblaisecode](https://github.com/theblaisecode)
+- Twitter - [@theblaisecode](https://twitter.com/theblaisecode)
+- LinkedIn - [@theblaisecode](https://www.linkedin.com/in/theblaisecode)
+- Portfolio - [theblaisecode.netlify.app](https://theblaisecode.netlify.app/)
+- Frontend Mentor Challenges - [Frontend Mentors](https://www.frontendmentor.io/profile/theblaisecode)
