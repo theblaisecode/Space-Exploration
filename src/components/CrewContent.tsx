@@ -32,7 +32,7 @@ function CrewContent() {
               );
             })}
           </div>
-          
+
           <div className="crewNav">
             <div className="allCrewNav">
               {crew.map((crewNav) => {
