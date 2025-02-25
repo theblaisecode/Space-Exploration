@@ -9,8 +9,10 @@ const CrewContentWrapper = styled.section`
   }
 
   .contentTop {
-    position: relative;
-    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 9rem 0 1.5rem 0;
+    gap: 10rem;
   }
 
   .contentTop,
@@ -71,14 +73,15 @@ const CrewContentWrapper = styled.section`
   }
 
   .allCrewNav {
-    position: absolute;
+    /* position: absolute;
     bottom: -40%;
-    left: 0%;
+    left: 0%; */
     /* transform: translateX(8%); */
     display: flex;
     gap: 3rem;
     width: 100%;
     max-width: 120rem;
+    /* margin-top: 10rem; */
     text-align: center;
   }
 
@@ -111,13 +114,17 @@ const CrewContentWrapper = styled.section`
     }
 
     .contentTop {
-      margin-bottom: 4rem;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin: 2rem 0 3rem 0;
     }
 
     .crewDeets {
       align-items: center;
       gap: 1.6rem;
       text-align: center;
+      min-height: 15rem;
     }
 
     .crewDeets span {
@@ -144,16 +151,6 @@ const CrewContentWrapper = styled.section`
       padding: 0;
     }
 
-    .allCrewNav {
-      position: fixed;
-      bottom: 48%;
-      left: 50%;
-      transform: translateX(-26%);
-      width: 100%;
-      max-width: 120rem;
-      text-align: center;
-    }
-
     .allCrewNav span {
       font-size: 1.3rem;
       gap: 2rem;
@@ -163,15 +160,8 @@ const CrewContentWrapper = styled.section`
   @media (min-width: 550px) and (max-width: 950px) {
     .contentTop {
       width: 72%;
-    }
-
-    .crewDeets {
-      padding-bottom: 5rem;
-    }
-
-    .allCrewNav {
-      bottom: 52%;
-      transform: translateX(-14%);
+      gap: 4rem;
+      margin-bottom: 5rem;
     }
 
     .contentBottom img {

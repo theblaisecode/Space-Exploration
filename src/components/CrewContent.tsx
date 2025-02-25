@@ -13,24 +13,26 @@ function CrewContent() {
     <CrewContentWrapper>
       <div className="allCrew">
         <div className="contentTop">
-          {crew.map((crewDetails) => {
-            const { id, jobTitle, crewName, crewInfo } = crewDetails;
+          <div className="crewDetails">
+            {crew.map((crewDetails) => {
+              const { id, jobTitle, crewName, crewInfo } = crewDetails;
 
-            return (
-              <div
-                key={id}
-                className={
-                  crewData === id
-                    ? "fadeIn crewDeets active"
-                    : "fadeIn crewDeets"
-                }>
-                <span>{jobTitle} </span>
-                <h2>{crewName}</h2>
-                <p>{crewInfo}</p>
-              </div>
-            );
-          })}
-
+              return (
+                <div
+                  key={id}
+                  className={
+                    crewData === id
+                      ? "fadeIn crewDeets active"
+                      : "fadeIn crewDeets"
+                  }>
+                  <span>{jobTitle} </span>
+                  <h2>{crewName}</h2>
+                  <p>{crewInfo}</p>
+                </div>
+              );
+            })}
+          </div>
+          
           <div className="crewNav">
             <div className="allCrewNav">
               {crew.map((crewNav) => {
