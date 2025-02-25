@@ -3,7 +3,10 @@ import styled from "styled-components";
 const TechnContentWrapper = styled.section`
   .allTech {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .allTech .contentTop,
@@ -79,16 +82,15 @@ const TechnContentWrapper = styled.section`
   }
 
   .contentBottom {
-    /* flex: 1; */
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0;
   }
 
   .contentBottom img {
     width: 100%;
-    /* margin-right: -77.5%; */
     display: none;
   }
 
@@ -99,6 +101,7 @@ const TechnContentWrapper = styled.section`
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
     .allTech {
       flex-direction: column-reverse;
+      padding-top: 3rem;
     }
 
     .allTech .contentTop {
@@ -138,8 +141,9 @@ const TechnContentWrapper = styled.section`
     }
 
     .contentBottom {
+      flex: none;
       width: 100vw;
-      height: 30vh;
+      height: 25vh;
       justify-content: center;
       overflow: hidden;
     }
@@ -148,14 +152,14 @@ const TechnContentWrapper = styled.section`
       width: 100%;
       height: 100%;
       object-fit: cover;
-      margin-right: 0;
     }
   }
 
   @media (min-width: 550px) and (max-width: 950px) {
     .contentBottom {
       width: 100%;
-      height: 43vh;
+      height: 33vh;
+      flex: none;
     }
 
     .contentBottom img {
@@ -200,7 +204,6 @@ const TechnContentWrapper = styled.section`
     }
 
     .contentBottom img {
-      width: 70%;
       margin-right: 0;
     }
   }

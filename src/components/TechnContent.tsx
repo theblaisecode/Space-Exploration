@@ -30,23 +30,25 @@ function TechnContent() {
             </div>
           </div>
 
-          {technology.map((techDetails) => {
-            const { id, stage, info } = techDetails;
+          <div className="techDetails">
+            {technology.map((techDetails) => {
+              const { id, stage, info } = techDetails;
 
-            return (
-              <div
-                key={id}
-                className={
-                  techData === id
-                    ? "fadeIn techDeets active"
-                    : "fadeIn techDeets"
-                }>
-                <span>The terminology... </span>
-                <h2>{stage}</h2>
-                <p>{info}</p>
-              </div>
-            );
-          })}
+              return (
+                <div
+                  key={id}
+                  className={
+                    techData === id
+                      ? "fadeIn techDeets active"
+                      : "fadeIn techDeets"
+                  }>
+                  <span>The terminology... </span>
+                  <h2>{stage}</h2>
+                  <p>{info}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div className="contentBottom">
