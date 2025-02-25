@@ -654,7 +654,10 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
 `;function l0(){return W.jsx(i0,{children:W.jsx("div",{className:"container2",children:W.jsxs("div",{className:"crewContent",children:[W.jsx(Ls,{highlight:"02",text:"meet your crew"}),W.jsx(n0,{})]})})})}const o0=Ln.section`
   .allTech {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .allTech .contentTop,
@@ -730,16 +733,15 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   }
 
   .contentBottom {
-    /* flex: 1; */
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0;
   }
 
   .contentBottom img {
     width: 100%;
-    /* margin-right: -77.5%; */
     display: none;
   }
 
@@ -750,6 +752,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   @media screen and (max-width: 950px), screen and (max-height: 550px) {
     .allTech {
       flex-direction: column-reverse;
+      padding-top: 3rem;
     }
 
     .allTech .contentTop {
@@ -789,8 +792,9 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     }
 
     .contentBottom {
+      flex: none;
       width: 100vw;
-      height: 30vh;
+      height: 25vh;
       justify-content: center;
       overflow: hidden;
     }
@@ -799,14 +803,14 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
       width: 100%;
       height: 100%;
       object-fit: cover;
-      margin-right: 0;
     }
   }
 
   @media (min-width: 550px) and (max-width: 950px) {
     .contentBottom {
       width: 100%;
-      height: 43vh;
+      height: 33vh;
+      flex: none;
     }
 
     .contentBottom img {
@@ -851,11 +855,10 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     }
 
     .contentBottom img {
-      width: 70%;
       margin-right: 0;
     }
   }
-`;function a0(){const[r,l]=z.useState(1),o=s=>{l(s)};return W.jsx(o0,{children:W.jsxs("div",{className:"allTech",children:[W.jsxs("div",{className:"contentTop",children:[W.jsx("div",{className:"techNav",children:W.jsx("div",{className:"allTechNav",children:ts.map(s=>{const{id:c}=s;return W.jsx("span",{className:r===c?"active":"",onClick:()=>o(c),children:c},c)})})}),ts.map(s=>{const{id:c,stage:d,info:p}=s;return W.jsxs("div",{className:r===c?"fadeIn techDeets active":"fadeIn techDeets",children:[W.jsx("span",{children:"The terminology... "}),W.jsx("h2",{children:d}),W.jsx("p",{children:p})]},c)})]}),W.jsx("div",{className:"contentBottom",children:ts.map(s=>{const{id:c,techImg:d,techImgAlt:p}=s;return W.jsx("img",{src:d,alt:p,className:r===c?"fadeIn active":"fadeIn"},c)})})]})})}const u0="/Space-Exploration/assets/background-technology-desktop-9E6-bP1U.jpg",s0=Ln.section`
+`;function a0(){const[r,l]=z.useState(1),o=s=>{l(s)};return W.jsx(o0,{children:W.jsxs("div",{className:"allTech",children:[W.jsxs("div",{className:"contentTop",children:[W.jsx("div",{className:"techNav",children:W.jsx("div",{className:"allTechNav",children:ts.map(s=>{const{id:c}=s;return W.jsx("span",{className:r===c?"active":"",onClick:()=>o(c),children:c},c)})})}),W.jsx("div",{className:"techDetails",children:ts.map(s=>{const{id:c,stage:d,info:p}=s;return W.jsxs("div",{className:r===c?"fadeIn techDeets active":"fadeIn techDeets",children:[W.jsx("span",{children:"The terminology... "}),W.jsx("h2",{children:d}),W.jsx("p",{children:p})]},c)})})]}),W.jsx("div",{className:"contentBottom",children:ts.map(s=>{const{id:c,techImg:d,techImgAlt:p}=s;return W.jsx("img",{src:d,alt:p,className:r===c?"fadeIn active":"fadeIn"},c)})})]})})}const u0="/Space-Exploration/assets/background-technology-desktop-9E6-bP1U.jpg",s0=Ln.section`
   background: url(${u0}) no-repeat bottom center/cover;
   width: 100%;
   height: 100vh;
